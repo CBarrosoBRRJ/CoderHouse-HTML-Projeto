@@ -33,19 +33,6 @@ header{
     font-weight: 600;
 }
 
-.logo::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
-}
-
-
 .navbar a{
     font-size: 18px;
     color: #ededed;
@@ -53,15 +40,7 @@ header{
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-
 }
-
-
-.navbar a:hover,
-.navbar a.active{
-    color: #00abf0;
-}
-
 
 .home{
     height: 100vh;
@@ -85,54 +64,20 @@ header{
     line-height: 1.2;
 }
 
-.home-content h1::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
 .home-content h3{
     position: relative;
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
-}
-
-
-.home-content h3::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
+    font-style: italic;
 }
 
 .home-content p{
     position: relative;
-    font-size: 16;
+    font-size: 16px;
     margin: 20px 0 40px;
-}
-
-.home-content p::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
+    text-align: justify;
+    
 }
 
 .home-content .btn-box{
@@ -142,19 +87,6 @@ header{
     width: 345px;
     height: 50px;
     background: transparent;
-}
-
-.home-content .btn-box::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.9s;
-    z-index: 2;
 }
 
 
@@ -172,29 +104,32 @@ header{
 }
 
 
+.home-content h4{
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00abf0;
+    font-style: italic;
+}
+
 .list-content ul{
     position: relative;
     font-size: 16px;
     background: transparent;
-    margin-bottom: 20px;
+    margin: 20px 0 40px;
+}
+
+.list-content ul li{
+    position: relative;
+    font-size: 16px;
+    background: transparent;
+    margin-bottom: 10px;
+    text-align: justify;
+    
 }
 
 
-.list::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2s;
-    z-index: 100;
-}
 
-
-/* 
 .btn-box a{
     position: relative;
     display: inline-flex;
@@ -215,39 +150,7 @@ header{
     transition: .5s;
 }
 
-.btn-box a:hover{
-    color: #00abf0;
-}
 
-.btn-box a:nth-child(2){
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover{
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before{
-    background: #00abf0;
-
-}
-
-.btn-box a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #081b29;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover:before {
-    width: 100%;
-}
 
 .home-sci {
     position: absolute;
@@ -258,19 +161,6 @@ header{
     justify-content: space-around;
 }
 
-
-.home-sci::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
-    z-index: 2;
-}
 
 .home-sci a {
     position: relative;
@@ -291,29 +181,6 @@ header{
     
 }
 
-.home-sci a:hover {
-    color: #081b29;
-}
-
-
-.home-sci a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #00abf0;
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover:before{
-    width: 100%;
-    
-}
-
-
 
 .home-imgHover{
     position: absolute;
@@ -326,39 +193,4 @@ header{
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
-}
-
-
-.home-imgHover:hover{
-    background: #081b29;
-    opacity: .3;
-}
-
-.home-imgHover::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 100;
-} */
-
-
-
-/* KEYFRAMES ANIMAÇÕES */
-@keyframes showRight{
-    100%{
-        width: 0;
-    }
-}
-
-
-@keyframes manipActiveHover{
-    100%{
-        pointer-events: auto;
-    }
 }
