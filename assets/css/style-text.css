@@ -44,7 +44,7 @@ header{
 
 .home{
     height: 100vh;
-    background: url(img/home.png) no-repeat;
+    background: url(../img/home.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -140,7 +140,7 @@ header{
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
-    font-size: 19px;
+    font-size: 15px;
     color: #081b29;
     text-decoration: none;
     font-weight: 600;

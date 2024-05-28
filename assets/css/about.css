@@ -1,0 +1,156 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+    /* background: #112e42; */
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content:space-between;
+    z-index: 100;
+
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.heading{
+    font-size: 32px;
+    margin-top: 40px;
+    text-align: center;
+    /* background-color: aliceblue; */
+}
+
+span{
+    color: #00abf0;}
+
+
+
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+    
+}
+
+
+.about-img {
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.about-img img {
+    width: 40%;
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 45%;
+    height: 110%;
+    border-radius: 50%;
+    border-top: .2rem solid #112e42;
+    border-bottom: .2rem solid #112e42;
+    border-left: .2rem solid #00abf0;
+    border-right: .2rem solid #00abf0;
+    animation: aboutSpinner 8s linear infinite;
+
+}
+
+.about-content{
+    text-align: center;
+    
+}
+.about-content h3{
+    font-size: 25px;
+    margin-top: 30px;    
+}
+
+.about-content p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 0 ;
+}
+
+
+.btn-box{
+    display: flex;    
+    position: relative;
+    justify-content: center;
+    width: 345px;
+    height: 50px;
+    
+
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
