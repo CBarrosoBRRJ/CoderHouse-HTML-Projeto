@@ -8,9 +8,13 @@
 }
 
 body {
-    /* background: #081b29; */
-    color: #ededed;
-    background: #081b29;
+    
+    color: #ededed;    
+    background: url(../../img/backgroud.png) no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
+
+
 
