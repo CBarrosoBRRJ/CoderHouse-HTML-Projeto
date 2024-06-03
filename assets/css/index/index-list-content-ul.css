@@ -1,4 +1,4 @@
-.list-content ul{
+.list-content ul {
     position: relative;
     font-size: 16px;
     background: transparent;
@@ -6,20 +6,16 @@
     list-style-type: none;
 }
 
-
-.list-content ul li{
+.list-content ul li {
     position: relative;
     font-size: 16px;
     background: transparent;
     margin-bottom: 10px;
     text-align: justify;
-    
 }
 
-
 /* Colocando animação da aparição dos dados */
-
-.list-content ul li ::before{
+/* .list-content ul li::before {
     content: "";
     position: absolute;
     top: 0;
@@ -29,4 +25,23 @@
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 3s;
+} */
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .list-content ul {
+        margin: 10px 0 30px;
+    }
+    .list-content ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .list-content ul {
+        margin: 5px 0 20px;
+    }
+    .list-content ul li {
+        font-size: 12px;
+    }
 }

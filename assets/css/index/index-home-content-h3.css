@@ -1,5 +1,4 @@
-
-.home-content h3{
+.home-content h3 {
     position: relative;
     font-size: 32px;
     font-weight: 700;
@@ -8,7 +7,7 @@
 }
 
 
-.home-content h3::before{
+/* .home-content h3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -18,4 +17,19 @@
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
+} */
+
+/* Responsiveness for .home-content h3 */
+@media (max-width: 768px) {
+    .home-content h3 {
+        font-size: 28px;
+    }
 }
+
+@media (max-width: 480px) {
+    .home-content h3 {
+        font-size: 24px;
+    }
+}
+
+

@@ -1,11 +1,11 @@
-.home-content h1{
+.home-content h1 {
     position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.home-content h1::before{
+/* .home-content h1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -15,4 +15,20 @@
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
+} */
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 42px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
 }

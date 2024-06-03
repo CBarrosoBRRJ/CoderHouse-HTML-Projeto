@@ -8,12 +8,26 @@
 }
 
 body {
-    
-    color: #ededed;    
+    color: #ededed;
     background: url(../../img/backgroud.png) no-repeat;
     background-size: cover;
     background-position: center;
+}
 
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 

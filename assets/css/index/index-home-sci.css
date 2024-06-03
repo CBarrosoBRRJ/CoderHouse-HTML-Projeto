@@ -1,13 +1,41 @@
 .home-sci {
     position: absolute;
     background: transparent;
-    bottom: 40px;
-    width: 170px;
+    bottom: 5%; /* Ajustando a distância do fundo para ser responsiva */
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translateX(-50%); /* Centralizando horizontalmente */
+    width: 90%; /* Utilizando largura relativa */
+    max-width: 170px; /* Limitando a largura máxima */
     display: flex;
     justify-content: space-around;
+    z-index: 2; /* Ajustando a posição em relação ao conteúdo */
+    
 }
 
-.home-sci::before{
+
+
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .home-sci {
+        position: absolute;
+        bottom: 0; /* Posiciona o footer no fundo da tela */
+        width: 100%; /* Garante que ocupe toda a largura */
+        z-index: 1; /* Garante que esteja acima do conteúdo abaixo */
+        display: flex;
+        /* Verifique se há outras propriedades necessárias para .home-sci */
+    }
+
+    .home-sci::before {
+        /* Certifique-se de que a animação foi definida corretamente em outra parte do CSS */
+        animation-delay: 0.3s; /* Ajustando atraso da animação */
+        /* Verifique outras propriedades de animação, como animation-name, animation-duration, etc. */
+    }
+}
+
+
+/* .home-sci::before {
     content: "";
     position: absolute;
     top: 0;
@@ -16,6 +44,6 @@
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: .5s;
-    z-index: 2;
-}
+    animation-delay: 0.5s;
+    z-index: -1; 
+}  */

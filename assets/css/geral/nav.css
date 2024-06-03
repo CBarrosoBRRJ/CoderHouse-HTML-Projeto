@@ -1,4 +1,5 @@
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,9 +7,10 @@ header{
     padding: 20px 10%;
     background: transparent;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
-
+    transition: background 0.3s ease;
 }
 
 .logo {
@@ -19,7 +21,7 @@ header{
     font-weight: 600;
 }
 
-.logo::before{
+.logo::before {
     content: "";
     position: absolute;
     top: 0;
@@ -28,22 +30,67 @@ header{
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: .4s;
+    animation-delay: 0.4s;
 }
 
-.navbar a{
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s;
+    transition: color 0.3s;
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: #00abf0;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5% 5px; /* Adicionei 50px de padding no topo para criar espaço suficiente */        
+        display: flex;
+        position: relative;
+        z-index: 1; /* Garante que o header esteja acima do .home-content */
+    }
 
 
+    .logo {
+        font-size: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+}

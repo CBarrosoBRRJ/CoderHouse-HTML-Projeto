@@ -1,4 +1,4 @@
-.home{
+.home {
     height: 100vh;
     background: url(../../img/home.png) no-repeat;
     background-size: cover;
@@ -6,4 +6,12 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
+}
+
+/* Alterando o plano de fundo para telas pequenas */
+@media (max-width: 480px) {
+    .home {
+        background: #081b29;
+        
+    }
 }

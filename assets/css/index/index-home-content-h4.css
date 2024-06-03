@@ -1,4 +1,4 @@
-.home-content h4{
+.home-content h4 {
     position: relative;
     font-size: 20px;
     font-weight: 700;
@@ -6,8 +6,8 @@
     font-style: italic;
 }
 
-
-.home-content h4::before{
+/* Animação para o pseudo-elemento */
+/* .home-content h4::before {
     content: "";
     position: absolute;
     top: 0;
@@ -17,4 +17,20 @@
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
+} */
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .home-content h4 {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .home-content h4 {
+        font-size: 16px;
+    }
 }

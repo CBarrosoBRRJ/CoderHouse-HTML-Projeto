@@ -13,7 +13,7 @@
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
     
 }
 
@@ -21,7 +21,7 @@
     color: #081b29;
 }
 
-.home-sci a::before{
+.home-sci a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -33,7 +33,28 @@
     transition: 1s;
 }
 
-.home-sci a:hover:before{
+.home-sci a:hover::before {
     width: 100%;
-    
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .home-sci a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        border-width: 1.5px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .home-sci a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        border-width: 1px;
+    }
 }
