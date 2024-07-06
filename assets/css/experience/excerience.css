@@ -433,10 +433,7 @@ span {
 
 @media screen and (max-width: 500px) {
 
-    .heading{
-        padding:  5% 0%;
-        color: red
-    }
+
 
     .timeline{
         margin: 50px auto;
@@ -486,11 +483,21 @@ span {
     .btn-box a {
         font-size: 10px; /* Define tamanho da fonte */
     }
+
+    .heading{
+        padding:  5% 0%;
+        color: red
+    }
 }
 
 @media (min-width:401px) and (max-width: 480px) {
 
     .btn-box a {
         font-size: 12px; /* Define tamanho da fonte */
+    }
+
+    .heading{
+        padding:  5% 0%;
+        color: red
     }
 }
