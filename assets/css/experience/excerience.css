@@ -304,7 +304,7 @@ span {
     width: 100%; /* Define a largura */
     height: 100%; /* Define a altura */
     background: #081b29; /* Define cor de fundo */
-    animation: showRight 25s ease forwards; /* Aplica uma animação */
+    animation: showRight 5s ease forwards; /* Aplica uma animação */
     animation-delay: 1s; /* Define o atraso da animação */
     z-index: 2; /* Define a prioridade de empilhamento */
 }
