@@ -471,3 +471,21 @@ span {
     } 
     
 }
+
+
+
+/* ----------------- CSS AJUSTE PARA TELAS PEQUENAS ----------------- */
+
+@media (max-width: 400px) {
+
+    .btn-box a {
+        font-size: 10px; /* Define tamanho da fonte */
+    }
+}
+
+@media (min-width:401px) and (max-width: 480px) {
+
+    .btn-box a {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+}
