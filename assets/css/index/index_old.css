@@ -1,0 +1,457 @@
+/* ----------------- CSS TEXTO ----------------- */
+
+.home {
+    position: relative; /* Define o posicionamento relativo */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    margin: 0 10%; /* Define margens horizontais */
+    margin-top: 1%; /* Define margem superior */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); /* Adiciona sombra */
+    border: 1px solid black; /* Adiciona borda */
+    background-color: #112635; /* Define a cor de fundo */
+}
+
+.home-content {
+    background: transparent; /* Define fundo transparente */
+    max-width: 100%; /* Define largura máxima */
+    height: auto; /* Altura automática */
+    padding: 20px; /* Define preenchimento */
+}
+
+.home-content .btn-box {
+    display: flex; /* Define o layout flexível */
+    position: relative; /* Define o posicionamento relativo */
+    justify-content: space-between; /* Espaça itens igualmente */
+    width: 100%; /* Largura total */
+    max-width: 345px; /* Largura máxima */
+    height: 50px; /* Define altura */
+    background: transparent; /* Fundo transparente */
+}
+
+.list-contect {
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Define direção da flexbox */
+    gap: 8px; /* Espaçamento entre elementos */
+    background: transparent; /* Fundo transparente */
+    width: 1000px; /* Define largura */
+    margin: 0 auto; /* Centraliza o elemento */
+}
+
+.list-content ul {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    background: transparent; /* Fundo transparente */
+    margin: 20px 0 40px; /* Define margens */
+    list-style-type: none; /* Remove marcadores da lista */
+}
+
+.list-content ul li {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    background: transparent; /* Fundo transparente */
+    margin-bottom: 10px; /* Define margem inferior */
+    text-align: justify; /* Justifica o texto */
+}
+
+.home-content h1 {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 56px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define o peso da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+}
+
+.home-content h3 {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 32px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define o peso da fonte */
+    color: #00abf0; /* Define a cor da fonte */
+    font-style: italic; /* Define o estilo da fonte */
+}
+
+.home-content h4 {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define o peso da fonte */
+    color: #00abf0; /* Define a cor da fonte */
+    font-style: italic; /* Define o estilo da fonte */
+}
+
+.home-content p {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    margin: 20px 0 40px; /* Define margens */
+    text-align: justify; /* Justifica o texto */
+}
+
+.list::after {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    width: 120%; /* Define largura */
+    height: 100%; /* Define altura */
+    background: #081b29; /* Define cor de fundo */
+    animation: showRight 1s ease forwards; /* Animação */
+    animation-delay: 2s; /* Atraso da animação */
+    z-index: 100; /* Define a prioridade de empilhamento */
+}
+
+/* ----------------- CSS ACCORDION ----------------- */
+
+.accordion {
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 8px; /* Define borda arredondada */
+    padding: 12px; /* Define preenchimento */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1); /* Adiciona sombra */
+    border: 1px solid slategray; /* Adiciona borda */
+}
+
+.accordion-header {
+    background-color: transparent; /* Fundo transparente */
+    color: #ededed; /* Define cor da fonte */
+    border: none; /* Remove borda */
+    text-align: start; /* Alinha texto à esquerda */
+    justify-content: space-between; /* Espaça itens igualmente */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+.no_accordion {
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 8px; /* Define borda arredondada */
+    padding: 12px; /* Define preenchimento */
+    
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1); /* Adiciona sombra */
+    border: 1px solid slategray; /* Adiciona borda */
+}
+
+.no_accordion-header {
+    background-color: transparent; /* Fundo transparente */
+    color: #ededed; /* Define cor da fonte */
+    border: none; /* Remove borda */
+    text-align: start; /* Alinha texto à esquerda */
+    justify-content: space-between; /* Espaça itens igualmente */
+    font-size: 16px; /* Define o tamanho da fonte */
+        
+}
+
+.accordion-body {
+    color: #ededed; /* Define cor da fonte */
+    font-size: 14px; /* Define o tamanho da fonte */
+    opacity: 0; /* Define opacidade inicial */
+    height: 0; /* Define altura inicial */
+    overflow: hidden; /* Esconde overflow */
+    transition: opacity 1s; /* Transição suave */
+}
+
+.accordion-body.active {
+    height: 100%; /* Define altura ao ativar */
+    opacity: 1; /* Define opacidade ao ativar */
+    padding: 15px 0px; /* Define preenchimento ao ativar */
+}
+
+.arrow {
+    transition: transform .2s linear; /* Transição de rotação */
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg); /* Rotaciona seta */
+}
+
+.accordion-header .arrow {
+    margin-left: 10px; /* Margem esquerda do ícone */
+}
+
+/* ----------------- CSS DOS BOTÕES ----------------- */
+
+.home-btn {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    padding: 0 10%; /* Define preenchimento horizontal */
+    margin: 0 10%; /* Define margens horizontais */
+    margin-top: 30px; /* Define margem superior */
+    height: 40px; /* Define altura */
+}
+
+.btn-box {
+    display: flex; /* Define o layout flexível */
+    width: 100%; /* Define largura */
+    height: 100%; /* Define altura */
+    background-color: transparent; /* Fundo transparente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.btn-box a {
+    display: flex; /* Define o layout flexível */
+    margin: 0 10px; /* Define margens horizontais */
+    position: relative; /* Define o posicionamento relativo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 150px; /* Define largura */
+    height: 100%; /* Define altura */
+    background: #00abf0; /* Define cor de fundo */
+    border: 2px solid #00abf0; /* Define borda */
+    border-radius: 8px; /* Define borda arredondada */
+    font-size: 15px; /* Define o tamanho da fonte */
+    color: #081b29; /* Define cor da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 600; /* Define peso da fonte */
+    letter-spacing: 1px; /* Define espaçamento entre letras */
+    z-index: 1; /* Define a prioridade de empilhamento */
+    overflow: hidden; /* Esconde overflow */
+    transition: 1s; /* Transição suave */
+}
+
+.btn-box a:hover {
+    color: #00abf0; /* Define cor ao passar o mouse */
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent; /* Fundo transparente */
+    color: #00abf0; /* Define cor da fonte */
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29; /* Define cor ao passar o mouse */
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0; /* Define cor de fundo */
+}
+
+.btn-box a::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 0; /* Define largura inicial */
+    height: 100%; /* Define altura */
+    background: #081b29; /* Define cor de fundo */
+    z-index: -1; /* Define a prioridade de empilhamento */
+    transition: 1s; /* Transição suave */
+}
+
+.btn-box a:hover::before {
+    width: 100%; /* Define largura ao passar o mouse */
+}
+
+/* ----------------- CSS REDE SOCIAL ----------------- */
+
+.home-sci {
+    position: relative; /* Define o posicionamento relativo */
+    margin-top: 30px; /* Define margem superior */
+    padding-bottom: 30px; /* Define preenchimento inferior */
+    bottom: 5%; /* Ajusta distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 90%; /* Define largura relativa */
+    max-width: 170px; /* Define largura máxima */
+    display: flex; /* Define o layout flexível */
+    justify-content: space-around; /* Espaça itens igualmente */
+    z-index: 2; /* Define a prioridade de empilhamento */
+}
+
+.home-sci::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Define largura */
+    height: 100%; /* Define altura */
+    background: #081b29; /* Define cor de fundo */
+    animation: showRight 1s ease forwards; /* Animação */
+    animation-delay: 1s; /* Atraso da animação */
+    z-index: -1; /* Define a prioridade de empilhamento */
+}
+
+.home-sci a {
+    position: relative; /* Define o posicionamento relativo */
+    display: inline-flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 40px; /* Define largura */
+    height: 40px; /* Define altura */
+    background: transparent; /* Fundo transparente */
+    border: 2px solid #00abf0; /* Define borda */
+    border-radius: 50%; /* Define borda arredondada */
+    font-size: 20px; /* Define o tamanho da fonte */
+    color: #00abf0; /* Define cor da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    z-index: 1; /* Define a prioridade de empilhamento */
+    overflow: hidden; /* Esconde overflow */
+    transition: 1s; /* Transição suave */
+}
+
+.home-sci a:hover {
+    color: #081b29; /* Define cor ao passar o mouse */
+}
+
+.home-sci a::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 0; /* Define largura inicial */
+    height: 100%; /* Define altura */
+    background: #00abf0; /* Define cor de fundo */
+    z-index: -1; /* Define a prioridade de empilhamento */
+    transition: 1s; /* Transição suave */
+}
+
+.home-sci a:hover::before {
+    width: 100%; /* Define largura ao passar o mouse */
+}
+
+/* ----------------- CSS AJUSTE PARA TELAS PEQUENAS ----------------- */
+
+@media (max-width: 400px) {
+    .home {
+        padding: 0 5%; /* Define preenchimento horizontal */
+        margin: 0 5%; /* Define margens horizontais */
+    }
+
+    .home-content h1 {
+        font-size: 26px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h3 {
+        margin-top: 10px; /* Define margem superior */
+        font-size: 18px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h4 {
+        font-size: 15px; /* Define tamanho da fonte */
+    }
+    
+    .home-content p {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+
+    .list-content ul li {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+
+    .btn-box a {
+        font-size: 10px; /* Define tamanho da fonte */
+    }
+}
+
+@media (min-width:401px) and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 30px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h3 {
+        margin-top: 10px; /* Define margem superior */
+        font-size: 20px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h4 {
+        font-size: 18px; /* Define tamanho da fonte */
+    }
+    
+    .home-content p {
+        font-size: 14px; /* Define tamanho da fonte */
+    }
+
+    .list-content ul li {
+        font-size: 14px; /* Define tamanho da fonte */
+    }
+
+    .btn-box a {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+}
+
+
+
+/* ----------------- CSS ANTIGO ----------------- */
+
+
+
+/* 
+.home-content .btn-box::before {
+    content: "";  // Adiciona conteúdo vazio
+    position: absolute;  // Define o posicionamento absoluto
+    top: 0;  // Alinha ao topo
+    right: 0;  // Alinha à direita
+    width: 100%;  // Define a largura como 100%
+    height: 100%;  // Define a altura como 100%
+    background: #081b29;  // Define a cor de fundo
+    animation: showRight 1s ease forwards;  // Animação para mostrar da direita para a esquerda
+    animation-delay: 2s;  // Atraso de 2 segundos na animação
+    z-index: 2;  // Define a prioridade de empilhamento
+} 
+*/
+
+/* 
+.list-content ul li::before {
+    content: "";  // Adiciona conteúdo vazio
+    position: absolute;  // Define o posicionamento absoluto
+    top: 0;  // Alinha ao topo
+    right: 0;  // Alinha à direita
+    width: 100%;  // Define a largura como 100%
+    height: 100%;  // Define a altura como 100%
+    background: #081b29;  // Define a cor de fundo
+    animation: showRight 1s ease forwards;  // Animação para mostrar da direita para a esquerda
+    animation-delay: 3s;  // Atraso de 3 segundos na animação
+} 
+*/
+
+/* 
+.home-content h1::before {
+    content: "";  // Adiciona conteúdo vazio
+    position: absolute;  // Define o posicionamento absoluto
+    top: 0;  // Alinha ao topo
+    right: 0;  // Alinha à direita
+    width: 100%;  // Define a largura como 100%
+    height: 100%;  // Define a altura como 100%
+    background: #081b29;  // Define a cor de fundo
+    animation: showRight 1s ease forwards;  // Animação para mostrar da direita para a esquerda
+    animation-delay: 1s;  // Atraso de 1 segundo na animação
+} 
+*/
+
+/* 
+.home-content h3::before {
+    content: "";  // Adiciona conteúdo vazio
+    position: absolute;  // Define o posicionamento absoluto
+    top: 0;  // Alinha ao topo
+    right: 0;  // Alinha à direita
+    width: 100%;  // Define a largura como 100%
+    height: 100%;  // Define a altura como 100%
+    background: #081b29;  // Define a cor de fundo
+    animation: showRight 1s ease forwards;  // Animação para mostrar da direita para a esquerda
+    animation-delay: 1.5s;  // Atraso de 1,5 segundos na animação
+} 
+*/
+
+/* 
+.home-content h4::before {
+    content: "";  // Adiciona conteúdo vazio
+    position: absolute;  // Define o posicionamento absoluto
+    top: 0;  // Alinha ao topo
+    right: 0;  // Alinha à direita
+    width: 100%;  // Define a largura como 100%
+    height: 100%;  // Define a altura como 100%
+    background: #081b29;  // Define a cor de fundo
+    animation: showRight 1s ease forwards;  // Animação para mostrar da direita para a esquerda
+    animation-delay: 2.5s;  // Atraso de 2,5 segundos na animação
+} 
+*/
+
+/* 
+.home-content p::before {
+    content: "";  // Adiciona conteúdo vazio
+    position: absolute;  // Define o posicionamento absoluto
+    top: 0;  // Alinha ao topo
+    right: 0;  // Alinha à direita
+    width: 100%;  // Define a largura como 100%
+    height: 100%;  // Define a altura como 100%
+    background: #081b29;  // Define a cor de fundo
+    animation: showRight 1s ease forwards;  // Animação para mostrar da direita para a esquerda
+    animation-delay: 2s;  // Atraso de 2 segundos na animação
+} 
+*/

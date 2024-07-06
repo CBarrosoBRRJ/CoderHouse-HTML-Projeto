@@ -1,83 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    
+    <title>Caio Barroso</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/geral/body.css">
     <link rel="stylesheet" href="assets/css/geral/nav.css">    
-    <link rel="stylesheet" href="assets/css/geral/keyframes.css">    
+    <link rel="stylesheet" href="assets/css/geral/body.css">    
     <link rel="stylesheet" href="assets/css/index/index.css">    
+    <link rel="stylesheet" href="assets/css/geral/keyframes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     
-</head>
 
+</head>
 
 
 <body>
 
-    <header class="header">
-        <a href="#" class="logo">Caio.</a>
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>                 
-            <a href="assets/pages/experience.html">Experiência</a>                 
-            <a href="https://github.com/CBarrosoBRRJ" target="_blank">Portfólio</a>                 
+<!-- -------------------------LOGO E MENU NAVEGACAO--------------------- -->
+
+<header class="header">
+    <a href="#" class="logo">Caio.</a>
+        
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>                 
+        <a href="assets/pages/about.html">Sobre</a>                 
+        <a href="#">Experiência</a>                 
+        <a href="#" target="_blank">Portfólio</a>                 
+        <a href="#">Contato</a>                 
+    </nav>
+    
+    <div class="mobile-menu-icon" onclick="menuShow()">
+        <img class="icon" src="assets/img/menu_white_36dp.svg" alt="">
+    </div>
+    
+    <div class="mobile-menu">
+        <nav>
+            <a href="#" class="active">Home</a>                 
+            <a href="assets/pages/about.html">Sobre</a>                 
+            <a href="#">Experiência</a>                 
+            <a href="#" target="_blank">Portfólio</a>                 
             <a href="#">Contato</a>                 
         </nav>
-        
-        <div class="mobile-menu-icon" onclick="menuShow()">
-            <img class="icon" src="assets/img/menu_white_36dp.svg" alt="">
-        </div>
-        
-        <div class="mobile-menu">
-            <nav>
-                <a href="index.html" class="active">Home</a>                 
-                <a href="assets/pages/experience.html">Experiência</a>                 
-                <a href="#" target="_blank">Portfólio</a>                 
-                <a href="#">Contato</a>                 
-            </nav>
-        </div>
-    </header>    
+    </div>
+</header>
 
-    <!-- Espaço da seção "about" -->
-    <section class="about" id="about">
-        
 
-        <div class="about-img">
-            <img src="assets/img/about-ciclo.png" alt="">
-            <span class="circle-spin"></span>
-        </div>
 
-        <h2 class="heading"> Sobre <span>Mim</span></h2>
 
-        <div class="about-content">
-            <h3>Especialista em Data Science & Desenvolvedor Frontend</h3>
 
-            <p>Sou um profissional com mais de 15 anos de experiência nas áreas de Análise de Dados, Engenharia e Produção, com atuação em setores estratégicos em empresas nacionais e multinacionais de renome nos segmentos Alimentício, Offshore, Siderúrgico, Industrial, Químico, Farmacêutico e Telecomunicações.</p>
+<!-- -------------------------TEXTO DO HOME--------------------------- -->
 
-            <p>Tenho expertise em apoiar gestores na tomada de decisões e na execução de novos projetos, utilizando ferramentas avançadas de controle de dados e Indicadores de Desempenho (KPIs). Com o  foco de promover a melhoria contínua dos processos, visando sempre a eficiência e a redução de custos.</p>
-                
-            <p>Minha ampla experiência em planejamento abrange áreas como planejamento de manutenção (PCM), planejamento de produção (PCP), gestão financeira e orçamentária, gestão de projetos, além do controle de processos nas áreas de marketing e energia. Monitoro e controlo as operações utilizando relatórios diários, semanais e mensais, conduzindo reuniões para apresentar indicadores de desempenho e discutir melhorias contínuas.</p>
-                
-            <p>Destaco minha participação na implementação de programas e filosofias como TPM (Gestão da Performance Total), Lean Manufacturing e RCM (Manutenção Centrada em Confiabilidade). Sou um profissional multidisciplinar, atuando em áreas diversas como engenharia, produção, financeiro e administrativo.</p>
 
-            <h3>Formação Acadêmica</h3>
-
-            <ul>
-                <li>Formação técnica em Mecânica.</li>
-                <li>Graduado em Administração, com segunda graduação em Ciência de Dados.</li>
-                <li>MBA em Inteligência Artificial, Machine Learning e Deep Learning pelo MIT.</li>
-                <li>Ferramentas: Experiente em MS Office, incluindo Power BI, SharePoint, Power Apps e Power Automate para análise de dados e automação de processos.</li>
-                <li>Data Science e Machine Learning: Expertise em controle de dados, arquitetura e estruturação de dados, ETL (Extract, Transform, Load), e uso de frameworks como Pandas, NumPy, TensorFlow, SciKit Learn, PyTorch e Selenium para desenvolvimento de modelos preditivos e automação de processos.</li>
-            </ul>
-    </section>
-
-    <!-- CRIANDO AREA PARA ACCORDION COM OS DADOS DE EXPERIENCIA -->
-
-    <section class="about">
+    <section class="home">
         <div class="home-content">
+            <h1>Olá, eu sou o Caio Barroso</h1>
+            <br><br>
+            <h3>Especialista em Data Science & Desenvolvedor Frontend</h3>
+            <p>Bem-vindo ao meu espaço na web! Sou apaixonado por transformar dados em soluções inteligentes e criar interfaces que fazem a diferença. Tenho mais de 15 anos de experiência em análise de dados e um conhecimento sólido em desenvolvimento frontend. 
+            <br><br><i>Para melhorar minha expertise, estou cursando um  MIT (MBA em Tecnologia) com foco em Inteligência Artificial, Machine Learning e Deep Learning</i>.</p>
+
             <h4>Um pouco sobre minha experiência:</h4>
 
             <div class="list-content">
@@ -154,38 +136,37 @@
 
                 </button>
             </ul>
+            
+            
+            
 
-    </section>
+                <!-- ------------------------- MSG FINAL DO TEXTO ------ -->
 
-    <!-- ETAPA FINAL DO TEXTO -->
-
-    <section class="text_content">
-        <div>
-            <p>Para mais detalhes sobre meu histórico profissional e projetos, sinta-se à vontade para explorar meu <a href="https://github.com/CBarrosoBRRJ" target="_blank">portfólio</a> ou me <a href="https://contate.me/caio_barroso">contatar diretamente</a>.</p>
-        </div>
-    </section>
-
-        <!-- -------------------------BOTOES DE CONTATO E DOWNLOAD------ -->
-
-        <section class="home-btn"> 
-            <div class="btn-box">
-                <a target="_blank" href="https://contate.me/caio_barroso">Fale comigo!</a>
-                <a target="_blank" href="assets/doc/CV_Caio Cesar Moura Barroso.pdf">Download CV</a>
+                <p style="margin-top: 3%; text-align: center;" class="accordion-header"> <i>Meu compromisso é transformar dados em ações que geram resultados reais. Vamos construir algo incrível juntos!</i></p>
             </div>
+    </section>
+
+    <!-- -------------------------BOTOES DE CONTATO E DOWNLOAD------ -->
+
+    <section class="home-btn"> 
+        <div class="btn-box">
+            <a target="_blank" href="https://contate.me/caio_barroso">Fale comigo!</a>
+            <a target="_blank" href="assets/doc/CV_Caio Cesar Moura Barroso.pdf">Download CV</a>
         </div>
-    
-        </section>
-    
-        <!-- -------------------------LOGO REDE SOCIAL ---------------- -->
-    
-        <section>        
-        <div class="home-sci">
-            <a href="https://www.linkedin.com/in/caiobarrosodataanalyst/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://github.com/CBarrosoBRRJ" target="_blank"><i class='bx bxl-github' ></i></a>            
-        </div>
-    
-        <span class="home-imgHover"></span>
-        </section>
+    </div>
+
+    </section>
+
+    <!-- -------------------------LOGO REDE SOCIAL ---------------- -->
+
+    <section>        
+    <div class="home-sci">
+        <a href="https://www.linkedin.com/in/caiobarrosodataanalyst/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://github.com/CBarrosoBRRJ" target="_blank"><i class='bx bxl-github' ></i></a>            
+    </div>
+
+    <span class="home-imgHover"></span>
+    </section>
 
 
 
@@ -194,3 +175,6 @@
 
     
 </body>
+
+
+</html>

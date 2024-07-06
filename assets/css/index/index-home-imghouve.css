@@ -30,30 +30,3 @@
     animation-delay: 1s;
     z-index: 100;
 }
-
-/* Media Queries for Responsiveness */
-
-/* Tablets */
-@media (max-width: 768px) {
-    .home-imgHover {
-        right: 20px;
-        width: 400px;
-    }
-
-    .home-imgHover::after {
-        width: 150%;
-    }
-}
-
-/* Mobile Devices */
-@media (max-width: 480px) {
-    .home-imgHover {
-        right: 10px;
-        width: 100%;
-        
-    }
-
-    .home-imgHover::after {
-        width: 200%;
-    }
-}

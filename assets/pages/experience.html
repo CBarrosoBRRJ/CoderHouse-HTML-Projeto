@@ -4,21 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/geral/body.css">
+    <link rel="stylesheet" href="../css/geral/nav.css">
+    <link rel="stylesheet" href="../css/experience/excerience.css">   
+    <link rel="stylesheet" href="../css/geral/keyframes.css">      
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Caio.</a>
         <nav class="navbar">
             <a href="../../index.html">Home</a>                 
-            <a href="../pages/about.html" class="active">Sobre</a>                 
-            <a href="../pages/experience.html">Experiência</a>                 
+            <a href="assets/pages/experience.html" class="active">Experiência</a>                 
             <a href="https://github.com/CBarrosoBRRJ" target="_blank">Portfólio</a>                 
             <a href="#">Contato</a>                 
-        </nav>           
-    </header>
+        </nav>
+        
+        <div class="mobile-menu-icon" onclick="menuShow()">
+            <img class="icon" src="../img/menu_white_36dp.svg" alt="">
+        </div>
+        
+        <div class="mobile-menu">
+            <nav>
+                <a href="../../index.html" >Home</a>                 
+                <a href="assets/pages/experience.html" class="active">Experiência</a>                 
+                <a href="#" target="_blank">Portfólio</a>                 
+                <a href="#">Contato</a>                 
+            </nav>
+        </div>
+    </header>    
+
+    <!-- Espaço da seção "about" -->
+    <section class="plano_de_fundo" id="about">        
+
+        <div class="about-img">
+            <img src="../img/about-ciclo.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        
+
+    </section>
 
     
-    <br>
-    <p>Ainda em Construção</p>
+
+    <!-- COMECA A CRIAÇÃO DA TIMELINE -->
+
+    <section class="fundo_timeline">
+
+        <h2 class="heading">Minha<span> Experiência</span></h2>
+        <div class="timeline">
+            
+            <div class="container left-container">
+                <img src="../img/logo/Oi.png" alt="">
+                <div class="text-box">
+                    <h2>NOVA OI</h2>
+                    <small>Analista de dados | 2023 - 2024</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container rigth-container">
+                <img src="../img/logo/ManpowerGroup.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 02</h2>
+                    <small>2023 - 2023</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="rigth-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="../img/logo/Carta Fabril.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 03</h2>
+                    <small>2022 - 2022</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container rigth-container">
+                <img src="../img/logo/Rede D'Or São Luiz.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 04</h2>
+                    <small>2021 - 2021</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="rigth-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="../img/logo/AES Union.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 05</h2>
+                    <small>2022 - 2022</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container rigth-container">
+                <img src="../img/logo/Stefanini Brasil.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 06</h2>
+                    <small>2021 - 2021</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="rigth-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="../img/logo/Sondotécnica Engenharia de Solos.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 07</h2>
+                    <small>2024 - 2024</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container rigth-container">
+                <img src="../img/logo/Bimbo do Brasil.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 08</h2>
+                    <small>2023 - 2023</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="rigth-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="../img/logo/ThyssenKrupp.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 09</h2>
+                    <small>2022 - 2022</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container rigth-container">
+                <img src="../img/logo/Cogumelo Indústria e Comércio S.A.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 10</h2>
+                    <small>2021 - 2021</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="rigth-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="../img/logo/Lafarge.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 11</h2>
+                    <small>2022 - 2022</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container rigth-container">
+                <img src="../img/logo/Sicpa Brasil Ind. de Tintas e Sistemas Ltda.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 12</h2>
+                    <small>2021 - 2021</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="rigth-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="../img/logo/Farmoquímica S.A.png" alt="">
+                <div class="text-box">
+                    <h2>EMPRESA 13</h2>
+                    <small>2022 - 2022</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, provident commodi placeat, vero quia quae accusamus sequi quam, ipsa ad saepe sed consequuntur quidem magni fugiat accusantium. Unde, ratione voluptas!</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+            <!-- -------------------------BOTOES DE CONTATO E DOWNLOAD------ -->
+
+            <section class="home-btn"> 
+                <div class="btn-box">
+                    <a target="_blank" href="https://contate.me/caio_barroso">Fale comigo!</a>
+                    <a target="_blank" href="assets/doc/CV_Caio Cesar Moura Barroso.pdf">Download CV</a>
+                </div>
+            </div>
+        
+            </section>
+        
+            <!-- -------------------------LOGO REDE SOCIAL ---------------- -->
+        
+            <section>        
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/caiobarrosodataanalyst/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/CBarrosoBRRJ" target="_blank"><i class='bx bxl-github' ></i></a>            
+            </div>
+        
+            <span class="home-imgHover"></span>
+            </section>
+    
+    
+    
+        <script src="../js/script_pages.js"></script>
 </body>
 </html>

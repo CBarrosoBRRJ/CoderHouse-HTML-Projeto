@@ -1,0 +1,465 @@
+/* --- CSS DA SEÇÃO ABOUT --- */
+.about {
+    position: relative; /* Define o posicionamento relativo */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    margin: 0 10%; /* Define margens horizontais */
+    margin-top: 1%; /* Define margem superior */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); /* Adiciona sombra */
+    border: 1px solid black; /* Adiciona borda */
+    background-color: #112635; /* Define a cor de fundo */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+/* --- CSS DA IMAGEM --- */
+.about-img {
+    margin-top: 30px; /* Define margem superior */
+    position: relative; /* Define o posicionamento relativo */
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.about-img img {
+    width: 40%; /* Define a largura da imagem */
+}
+
+.about-img .circle-spin {
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 50%; /* Alinha ao meio verticalmente */
+    left: 50%; /* Alinha ao meio horizontalmente */
+    transform: translate(-50%, -50%) rotate(0); /* Centraliza e remove rotação inicial */
+    width: 45%; /* Define a largura do círculo */
+    height: 110%; /* Define a altura do círculo */
+    border-radius: 50%; /* Faz a borda ser um círculo */
+    border-top: .2rem solid #112e42; /* Define a cor da borda superior */
+    border-bottom: .2rem solid #112e42; /* Define a cor da borda inferior */
+    border-left: .2rem solid #00abf0; /* Define a cor da borda esquerda */
+    border-right: .2rem solid #00abf0; /* Define a cor da borda direita */
+    animation: aboutSpinner 8s linear infinite; /* Aplica uma animação de rotação */
+}
+
+/*  --- CSS 'SOBRE MIM' --- */
+.heading {
+    font-size: 32px; /* Define o tamanho da fonte */
+    margin-top: 40px; /* Define a margem superior */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+span {
+    color: #00abf0; /* Define a cor do texto dentro da tag <span> */
+}
+
+/* --- CSS DO TEXTO SOBRE MIM --- */
+.about-content {
+    text-align: center; /* Alinha o texto ao centro */
+    background: transparent; /* Define fundo transparente */
+    max-width: 100%; /* Define a largura máxima */
+    height: auto; /* Altura automática */
+    padding: 20px; /* Define preenchimento */
+}
+
+.about-content h3 {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 30px; /* Define a margem superior */
+    color: #00abf0; /* Define a cor da fonte */
+}
+
+.about-content p {
+    font-size: 16px; /* Define o tamanho da fonte */
+    text-align: justify; /* Justifica o texto */
+    margin: 20px 0; /* Define margens superior e inferior */
+}
+
+.about-content ul {
+    padding: 0% 10%; /* Define o preenchimento horizontal */
+    margin-top: 10px; /* Define margem superior */
+}
+
+.about-content ul li {
+    text-align: start; /* Alinha o texto ao início */
+    padding: 0% 1%; /* Define o preenchimento horizontal */
+    margin-top: 10px; /* Define margem superior */
+}
+
+.about-content p::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
+    animation: showRight 2.5s ease forwards; /* Aplica uma animação */
+    animation-delay: .5s; /* Define o atraso da animação */
+}
+
+/* --- CSS TEXTO --- */
+.text_content {
+    text-align: center; /* Alinha o texto ao centro */
+    background: transparent; /* Define fundo transparente */
+    max-width: 100%; /* Define largura máxima */
+    height: auto; /* Altura automática */
+    padding: 20px; /* Define preenchimento */
+}
+
+.text_content a {
+    color: #00abf0; /* Define a cor dos links */
+}
+
+/* --- CSS BOTÃO --- */
+.btn-box a {
+    position: relative; /* Define o posicionamento relativo */
+    display: inline-flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 150px; /* Define a largura */
+    height: 100%; /* Define a altura */
+    background: #00abf0; /* Define a cor de fundo */
+    border: 2px solid #00abf0; /* Define a cor da borda */
+    border-radius: 8px; /* Define borda arredondada */
+    font-size: 15px; /* Define o tamanho da fonte */
+    color: #081b29; /* Define a cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 600; /* Define peso da fonte */
+    letter-spacing: 1px; /* Define espaçamento entre letras */
+    z-index: 1; /* Define a prioridade de empilhamento */
+    overflow: hidden; /* Esconde overflow */
+    transition: .5s; /* Transição suave */
+}
+
+.btn-box {
+    display: flex; /* Define o layout flexível */
+    position: relative; /* Define o posicionamento relativo */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 345px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    
+}
+
+.btn-box::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
+    background: #081b29; /* Define cor de fundo */
+    animation: showRight 3s ease forwards; /* Aplica uma animação */
+    animation-delay: 1s; /* Define o atraso da animação */
+    z-index: 2; /* Define a prioridade de empilhamento */
+}
+
+/* --- CSS HOME --- */
+.home {
+    position: relative; /* Define o posicionamento relativo */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    margin: 0 10%; /* Define margens horizontais */
+    margin-top: 1%; /* Define margem superior */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); /* Adiciona sombra */
+    border: 1px solid black; /* Adiciona borda */
+    background-color: #112635; /* Define a cor de fundo */
+}
+
+.home-content {
+    background: transparent; /* Define fundo transparente */
+    max-width: 100%; /* Define largura máxima */
+    height: auto; /* Altura automática */
+    padding: 20px; /* Define preenchimento */
+}
+
+.list-content ul {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    background: transparent; /* Fundo transparente */
+    margin: 20px 0 40px; /* Define margens */
+    list-style-type: none; /* Remove marcadores da lista */
+}
+
+.list-content ul li {
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    background: transparent; /* Fundo transparente */
+    margin-bottom: 10px; /* Define margem inferior */
+    text-align: justify; /* Justifica o texto */
+}
+
+.home-content h4 {
+    text-align: center; /* Alinha o texto ao centro */
+    position: relative; /* Define o posicionamento relativo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 30px; /* Define a margem superior */
+    color: #00abf0; /* Define a cor da fonte */
+}
+
+/* --- CSS ACCORDION --- */
+.accordion {
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 8px; /* Define borda arredondada */
+    padding: 12px; /* Define preenchimento */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1); /* Adiciona sombra */
+    border: 1px solid slategray; /* Adiciona borda */
+}
+
+.accordion-header {
+    background-color: transparent; /* Fundo transparente */
+    color: #fff; /* Define cor da fonte */
+    border: none; /* Remove borda */
+    text-align: start; /* Alinha texto à esquerda */
+    justify-content: space-between; /* Espaça itens igualmente */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+.no_accordion {
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 8px; /* Define borda arredondada */
+    padding: 12px; /* Define preenchimento */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1); /* Adiciona sombra */
+    border: 1px solid slategray; /* Adiciona borda */
+}
+
+.no_accordion-header {
+    background-color: transparent; /* Fundo transparente */
+    color: #fff; /* Define cor da fonte */
+    border: none; /* Remove borda */
+    text-align: start; /* Alinha texto à esquerda */
+    justify-content: space-between; /* Espaça itens igualmente */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+.accordion-body {
+    color: #fff; /* Define cor da fonte */
+    font-size: 12px; /* Define o tamanho da fonte */
+    opacity: 0; /* Define opacidade inicial */
+    height: 0; /* Define altura inicial */
+    overflow: hidden; /* Esconde overflow */
+    transition: opacity 1s, height 1s; /* Transição suave */
+}
+
+.accordion-body.active {
+    height: auto; /* Define altura ao ativar */
+    opacity: 1; /* Define opacidade ao ativar */
+    padding: 15px 0px; /* Define preenchimento ao ativar */
+}
+
+.arrow {
+    transition: transform .2s linear; /* Transição de rotação */
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg); /* Rotaciona seta */
+}
+
+.accordion-header .arrow {
+    margin-left: 10px; /* Margem esquerda do ícone */
+}
+
+/* Adicionando cores brancas ao accordion */
+.accordion span, .no_accordion span, .accordion-body li, .accordion-body li b {
+    color: #fff; /* Define cor do texto */
+}
+
+/* ----------------- CSS DOS BOTÕES ----------------- */
+
+.home-btn {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    padding: 0 10%; /* Define preenchimento horizontal */
+    margin: 0 10%; /* Define margens horizontais */
+    margin-top: 30px; /* Define margem superior */
+    height: 40px; /* Define altura */
+}
+
+.btn-box {
+    display: flex; /* Define o layout flexível */
+    width: 100%; /* Define largura */
+    height: 100%; /* Define altura */
+    
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.btn-box a {
+    display: flex; /* Define o layout flexível */
+    margin: 0 10px; /* Define margens horizontais */
+    position: relative; /* Define o posicionamento relativo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 150px; /* Define largura */
+    height: 100%; /* Define altura */
+    background: #00abf0; /* Define cor de fundo */
+    border: 2px solid #00abf0; /* Define borda */
+    border-radius: 8px; /* Define borda arredondada */
+    font-size: 15px; /* Define o tamanho da fonte */
+    color: #081b29; /* Define cor da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 600; /* Define peso da fonte */
+    letter-spacing: 1px; /* Define espaçamento entre letras */
+    z-index: 1; /* Define a prioridade de empilhamento */
+    overflow: hidden; /* Esconde overflow */
+    transition: 2s; /* Transição suave */
+}
+
+.btn-box a:hover {
+    color: #00abf0; /* Define cor ao passar o mouse */
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent; /* Fundo transparente */
+    color: #00abf0; /* Define cor da fonte */
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29; /* Define cor ao passar o mouse */
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0; /* Define cor de fundo */
+}
+
+.btn-box a::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 0; /* Define largura inicial */
+    height: 100%; /* Define altura */
+    background: #081b29; /* Define cor de fundo */
+    z-index: -1; /* Define a prioridade de empilhamento */
+    transition: 1.5s; /* Transição suave */
+}
+
+.btn-box a:hover::before {
+    width: 100%; /* Define largura ao passar o mouse */
+}
+
+/* ----------------- CSS REDE SOCIAL ----------------- */
+
+.home-sci {
+    position: relative; /* Define o posicionamento relativo */
+    margin-top: 30px; /* Define margem superior */
+    padding-bottom: 30px; /* Define preenchimento inferior */
+    bottom: 5%; /* Ajusta distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 90%; /* Define largura relativa */
+    max-width: 170px; /* Define largura máxima */
+    display: flex; /* Define o layout flexível */
+    justify-content: space-around; /* Espaça itens igualmente */
+    z-index: 2; /* Define a prioridade de empilhamento */
+}
+
+.home-sci::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
+    background: #081b29; /* Define cor de fundo */
+    animation: showRight 1s ease forwards; /* Aplica uma animação */
+    animation-delay: 1s; /* Define o atraso da animação */
+    z-index: -1; /* Define a prioridade de empilhamento */
+}
+
+.home-sci a {
+    position: relative; /* Define o posicionamento relativo */
+    display: inline-flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 40px; /* Define largura */
+    height: 40px; /* Define altura */
+    background: transparent; /* Fundo transparente */
+    border: 2px solid #00abf0; /* Define borda */
+    border-radius: 50%; /* Define borda arredondada */
+    font-size: 20px; /* Define o tamanho da fonte */
+    color: #00abf0; /* Define cor da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    z-index: 1; /* Define a prioridade de empilhamento */
+    overflow: hidden; /* Esconde overflow */
+    transition: 1s; /* Transição suave */
+}
+
+.home-sci a:hover {
+    color: #081b29; /* Define cor ao passar o mouse */
+}
+
+.home-sci a::before {
+    content: ""; /* Adiciona conteúdo vazio */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 0; /* Define largura inicial */
+    height: 100%; /* Define altura */
+    background: #00abf0; /* Define cor de fundo */
+    z-index: -1; /* Define a prioridade de empilhamento */
+    transition: 1s; /* Transição suave */
+}
+
+.home-sci a:hover::before {
+    width: 100%; /* Define largura ao passar o mouse */
+}
+
+/* ----------------- CSS AJUSTE PARA TELAS PEQUENAS ----------------- */
+
+@media (max-width: 400px) {
+    .home {
+        padding: 0 5%; /* Define preenchimento horizontal */
+        margin: 0 5%; /* Define margens horizontais */
+    }
+
+    .home-content h1 {
+        font-size: 26px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h3 {
+        margin-top: 10px; /* Define margem superior */
+        font-size: 18px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h4 {
+        font-size: 15px; /* Define tamanho da fonte */
+    }
+    
+    .home-content p {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+
+    .list-content ul li {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+
+    .btn-box a {
+        font-size: 10px; /* Define tamanho da fonte */
+    }
+}
+
+@media (min-width:401px) and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 30px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h3 {
+        margin-top: 10px; /* Define margem superior */
+        font-size: 20px; /* Define tamanho da fonte */
+    }
+    
+    .home-content h4 {
+        font-size: 18px; /* Define tamanho da fonte */
+    }
+    
+    .home-content p {
+        font-size: 14px; /* Define tamanho da fonte */
+    }
+
+    .list-content ul li {
+        font-size: 14px; /* Define tamanho da fonte */
+    }
+
+    .btn-box a {
+        font-size: 12px; /* Define tamanho da fonte */
+    }
+}

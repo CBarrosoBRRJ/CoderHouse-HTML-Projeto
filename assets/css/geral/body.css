@@ -9,12 +9,19 @@
 
 body {
     color: #ededed;
-    background: url(../../img/backgroud.png) no-repeat;
+    background: #081b29;
+    /* background: url(../../img/backgroud.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    height: 100%;
+    
 }
 
+/* Estilos para telas pequenas */
+@media (max-width: 720px) {
 
+    body{
+        background: #081b29;
+    }
 
-
-
+}
