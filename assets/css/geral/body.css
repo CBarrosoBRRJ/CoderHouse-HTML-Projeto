@@ -17,6 +17,28 @@ body {
     
 }
 
+
+/* KEYFRAMES ANIMAÇÕES */
+
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover{
+    100%{
+        pointer-events: auto;
+    }
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 /* Estilos para telas pequenas */
 @media (max-width: 720px) {
 
