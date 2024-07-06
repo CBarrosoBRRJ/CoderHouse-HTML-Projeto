@@ -1,10 +1,9 @@
-# Projeto-Site
-Este repositório abriga o coração de um projeto de site corporativo, onde design elegante encontra funcionalidade impecável. Explore aqui a sinergia entre código limpo, layouts intuitivos e recursos dinâmicos, tudo empenhado em transmitir a essência e a excelência da sua marca.
+# Projeto-Portfólio
+Este repositório abriga o coração de uma página profissional, destacando minha experiência e portfólio. Explore aqui a sinergia entre código limpo, layouts intuitivos e recursos dinâmicos, tudo empenhado em transmitir a essência e a excelência do meu trabalho.
 
+# Página Profissional
 
-# Site Corporativo
-
-Este é um projeto de criação de um site corporativo, projetado para combinar design elegante com funcionalidade impecável. Explore aqui a sinergia entre código limpo, layouts intuitivos e recursos dinâmicos, tudo empenhado em transmitir a essência e a excelência da sua marca.
+Este é um projeto de criação de uma página profissional, projetada para combinar design elegante com funcionalidade impecável. Explore aqui a sinergia entre código limpo, layouts intuitivos e recursos dinâmicos, tudo empenhado em transmitir a essência e a excelência do meu trabalho.
 
 ## Instalação
 
@@ -18,11 +17,11 @@ Para instalar este projeto, siga estas etapas:
 Para usar este projeto, siga estas etapas:
 
 1. [Instruções sobre como iniciar o servidor, se aplicável].
-2. [Instruções sobre como acessar o site ou visualizar o projeto em execução].
+2. [Instruções sobre como acessar a página ou visualizar o projeto em execução].
 
 ## Contribuição
 
-Agradecemos por considerar contribuir para o projeto. Se deseja contribuir, por favor, siga estas diretrizes:
+Agradeço por considerar contribuir para o projeto. Se deseja contribuir, por favor, siga estas diretrizes:
 
 1. Faça um fork do repositório.
 2. Crie uma branch para sua feature (`git checkout -b feature/NomeDaFeature`).
