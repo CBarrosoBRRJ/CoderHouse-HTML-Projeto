@@ -434,7 +434,8 @@ span {
 @media screen and (max-width: 500px) {
 
     .heading{
-        padding:  20px 0px;
+        padding:  5% 0%;
+        color: red
     }
 
     .timeline{
