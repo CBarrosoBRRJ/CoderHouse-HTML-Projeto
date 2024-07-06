@@ -484,10 +484,7 @@ span {
         font-size: 10px; /* Define tamanho da fonte */
     }
 
-    .heading{
-        padding:  5% 0%;
-        color: red
-    }
+
 }
 
 @media (min-width:401px) and (max-width: 480px) {
@@ -496,8 +493,5 @@ span {
         font-size: 12px; /* Define tamanho da fonte */
     }
 
-    .heading{
-        padding:  5% 0%;
-        color: red
-    }
+
 }
